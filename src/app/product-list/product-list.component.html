@@ -1,0 +1,39 @@
+<div class="title">
+    <h1 class="mb-5">ELECTRONIC PRODUCTS</h1>
+    <div class="search-container" [class.has-suggestions]="suggestions.length > 0">
+
+        <input class="search" type="text" placeholder="search products here..." [(ngModel)]="searchTerm"
+            (input)="onSearchInput()" (keyup.enter)="searchProducts(searchTerm)">
+        <ul class="suggestion" *ngIf="suggestions.length>0">
+            <li *ngFor="let suggestion of suggestions" (click)="selectSuggestion(suggestion)">
+                {{suggestion}}
+            </li>
+        </ul>
+        <div *ngIf="noProductsFound && searchTerm" class="noProductsFound">
+            <div><img src="/assets/no products found.png" alt="no product found"></div>
+            <small>Please Check spelling or try searching for something else..</small>
+        </div>
+    </div>
+</div>
+<div *ngIf="!noProductsFound">
+    <div class="product-box">
+        <div class="product-card" *ngFor="let product of paginatedItems(currentPage)">
+            <img [src]="product.imgUrl" alt="{{product.name}}" />
+            <h3>{{product.name}}</h3>
+            <small>{{product.price | currency:"&#8377;"}}</small>
+            <div>
+                <button class="btn" (click)="toggleDetails(product.name)">
+                    {{ expandedProduct === product.name ? 'Hide Details' : 'View Details' }}
+                </button>
+
+                <ul class="specifications" [class.show]="expandedProduct === product.name">
+                    <li *ngFor="let spec of product.specifications">{{ spec }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pagination">
+        <button *ngFor="let page of setPagination()" [class.active]="currentPage===page"
+            (click)="onPageChange(page)">{{page}}</button>
+    </div>
+</div>
