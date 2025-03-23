@@ -1,7 +1,6 @@
 <div class="title">
-    <h1 class="mb-5">ELECTRONIC PRODUCTS</h1>
-    <div class="search-container" [class.has-suggestions]="suggestions.length > 0">
-
+    <h1>ELECTRONIC PRODUCTS</h1>
+    <div class="search-container">
         <input class="search" type="text" placeholder="search products here..." [(ngModel)]="searchTerm"
             (input)="onSearchInput()" (keyup.enter)="searchProducts(searchTerm)">
         <ul class="suggestion" *ngIf="suggestions.length>0">
