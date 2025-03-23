@@ -13,7 +13,7 @@ export class ProductService {
       name: "Samsung Galaxy A56 5G",
       category: "Phones",
       price: 44999,
-      imgUrl: "/assets/samsung galaxy a56.jpeg",
+      imgUrl: "assets/samsung galaxy a56.jpeg",
       specifications: ['12GB RAM', '256GB ROM', 'Samsung Exynos 1580 Processor']
     },
     {
@@ -21,7 +21,7 @@ export class ProductService {
       name: "Realme Narzo 50 pro 5G",
       category: "Phones",
       price: 27999,
-      imgUrl: "/assets/realme narzo 50 pro.jpeg",
+      imgUrl: "assets/realme narzo 50 pro.jpeg",
       specifications: ['6GB RAM', '128 GB ROM', 'Dimensity 920 5G Processor']
     },
 
@@ -30,7 +30,7 @@ export class ProductService {
       name: "Lenova Ideapad Slim 3",
       category: "Laptops",
       price: 49999,
-      imgUrl: "/assets/lenova ideapad.jpeg",
+      imgUrl: "assets/lenova ideapad.jpeg",
       specifications: ['16GB RAM', '512 GB SSD', 'Intel Core i5 Processor 12th Gen 12450H']
     },
     {
@@ -38,7 +38,7 @@ export class ProductService {
       name: "Noise Icon 4",
       category: "watches",
       price: 1999,
-      imgUrl: "/assets/Noise icon 4.jpeg",
+      imgUrl: "assets/Noise icon 4.jpeg",
       specifications: ['Icon 4 with Stunning 1.96 AMOLED Display', 'Metallic Finish', 'Jet Black']
     },
     {
@@ -46,7 +46,7 @@ export class ProductService {
       name: "Motorola edge 50 fusion",
       category: "Phones",
       price: 19999,
-      imgUrl: "/assets/motorola edge 50 fusion.jpeg",
+      imgUrl: "assets/motorola edge 50 fusion.jpeg",
       specifications: ['12GB RAM', '128GB ROM', '7s Gen 2 Processor']
     },
     {
@@ -54,7 +54,7 @@ export class ProductService {
       name: "ASUS TUF Gaming F 15",
       category: "Laptops",
       price: 55998,
-      imgUrl: "/assets/asus tuf.jpeg",
+      imgUrl: "assets/asus tuf.jpeg",
       specifications: ['8GB RAM', '512 GB SSD', 'Intel Core i5 Processor 11th Gen 12450H']
     },
     {
@@ -62,7 +62,7 @@ export class ProductService {
       name: "Samsung Galaxy Book5 360",
       category: "Laptops",
       price: 99999,
-      imgUrl: "/assets/samsung galaxy book5 360.jpeg",
+      imgUrl: "assets/samsung galaxy book5 360.jpeg",
       specifications: ['8GB RAM', '512 GB SSD', 'Intel Core i5 Processor 11th Gen 12350H']
     },
     {
@@ -70,7 +70,7 @@ export class ProductService {
       name: "Hp 15s Intel core i3 12th Gen",
       category: "Laptops",
       price: 33550,
-      imgUrl: "/assets/hp 15s.jpeg",
+      imgUrl: "assets/hp 15s.jpeg",
       specifications: ['8GB RAM', '512 GB SSD', 'Intel Core i3 Processor 12th Gen 12150H']
     },
     {
@@ -78,7 +78,7 @@ export class ProductService {
       name: "Realme Buds2 wired",
       category: "Headphones",
       price: 699,
-      imgUrl: "/assets/realme buds 2 wired.png",
+      imgUrl: "assets/realme buds 2 wired.png",
       specifications: ['R155 Model', 'Black', 'Wired DeepBase']
     },
 
@@ -87,7 +87,7 @@ export class ProductService {
       name: "boAt Ultima Ember w/ 1.96",
       category: "watches",
       price: 2199,
-      imgUrl: "/assets/boAt Ultima Ember.jpeg",
+      imgUrl: "assets/boAt Ultima Ember.jpeg",
       specifications: ['Ultima Ember w/ 1.96 (4.97cm)AMOLED Screen,', 'Bold Black', 'Personalized Nudges,Functional Crown']
     },
     {
@@ -95,7 +95,7 @@ export class ProductService {
       name: "boAt Airpods 311 Pro",
       category: "Headphones",
       price: 1299,
-      imgUrl: "/assets/boat airpods 311 pro.jpeg",
+      imgUrl: "assets/boat airpods 311 pro.jpeg",
       specifications: ['311 Pro Airpods', 'Light Pink', 'Wireless DeepBase']
     },
     {
@@ -103,7 +103,7 @@ export class ProductService {
       name: "Iphone 14 pro 5G",
       category: "Phones",
       price: 169999,
-      imgUrl: "/assets/iphone 14 pro.jpeg",
+      imgUrl: "assets/iphone 14 pro.jpeg",
       specifications: ['1 TB ROM', 'A16 Bionic Chip, 6 Core Processor']
     },
     {
@@ -111,7 +111,7 @@ export class ProductService {
       name: "OnePlus earbuds 3 TWS",
       category: "Headphones",
       price: 2589,
-      imgUrl: "/assets/oneplus 3 tws.jpeg",
+      imgUrl: "assets/oneplus 3 tws.jpeg",
       specifications: ['Buds 3 E509A', 'Splendid Blue', 'Wireless DeepBase']
     },
     
@@ -120,7 +120,7 @@ export class ProductService {
       name: "Apple Watch Series 10",
       category: "watches",
       price: 35000,
-      imgUrl: "/assets/apple watch series 10.jpeg",
+      imgUrl: "assets/apple watch series 10.jpeg",
       specifications: ['Magnetic Fast Charger to USB-C Cable', 'Water Resistance', 'Purple']
     },
 
