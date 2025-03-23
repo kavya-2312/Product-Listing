@@ -15,6 +15,7 @@ export class ProductListComponent {
   currentPage = 1;
   itemsPerPage = 3;
   noProductsFound = false;
+  pageCount:any;
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
@@ -42,7 +43,7 @@ export class ProductListComponent {
 
     this.noProductsFound = this.suggestions.length === 0;
   }
-
+  
   searchProducts(term: string) {
     this.searchTerm = term.trim();
     this.filteredProducts = this.searchTerm
@@ -67,12 +68,14 @@ export class ProductListComponent {
   }
 
   setPagination() {
-    const pageCount = Math.ceil(this.filteredProducts.length / this.itemsPerPage);
-    return Array.from({ length: pageCount }, (_, i) => i + 1)
+    this.pageCount = Math.ceil(this.filteredProducts.length / this.itemsPerPage);
+    return Array.from({ length: this.pageCount }, (_, i) => i + 1)
   }
 
   onPageChange(page: any) {
-    this.currentPage = page
+    if (page >= 1 && page <= this.pageCount) {
+      this.currentPage = page;
+    }
   }
 
   toggleDetails(productName: string) {

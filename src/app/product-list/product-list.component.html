@@ -1,6 +1,7 @@
 <div class="title">
     <h1>ELECTRONIC PRODUCTS</h1>
     <div class="search-container">
+        <!--Search Product-->
         <input class="search" type="text" placeholder="search products here..." [(ngModel)]="searchTerm"
             (input)="onSearchInput()" (keyup.enter)="searchProducts(searchTerm)">
         <ul class="suggestion" *ngIf="suggestions.length>0">
@@ -14,6 +15,7 @@
         </div>
     </div>
 </div>
+<!--Displaying the Products-->
 <div *ngIf="!noProductsFound">
     <div class="product-box">
         <div class="product-card" *ngFor="let product of paginatedItems(currentPage)">
@@ -31,8 +33,13 @@
             </div>
         </div>
     </div>
+    <!--Pagination-->
     <div class="pagination">
+        <button (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 1">&#8249;</button>
+
         <button *ngFor="let page of setPagination()" [class.active]="currentPage===page"
             (click)="onPageChange(page)">{{page}}</button>
+
+            <button (click)="onPageChange(currentPage + 1)" [disabled]="currentPage === pageCount">&#8250;</button>
     </div>
 </div>
